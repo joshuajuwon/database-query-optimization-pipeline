@@ -1,0 +1,15 @@
+DATABASE QUERY OPTIMIZATION PIPELINE
+
+FINAL BEFORE-INDEX BENCHMARK
+============================
+
+Query:
+SELECT *
+FROM sales
+WHERE customer_id = 5000;
+
+Optimization:
+No index on customer_id
+
+Execution Time:
+4500.323 ms

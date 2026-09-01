@@ -1,0 +1,21 @@
+DATABASE QUERY OPTIMIZATION PIPELINE
+
+FINAL AFTER-INDEX BENCHMARK
+===========================
+
+Query:
+SELECT *
+FROM sales
+WHERE customer_id = 5000;
+
+Index:
+idx_sales_customer_id
+
+Execution Time:
+64.942 ms
+
+Performance Improvement:
+69.30x faster
+
+Execution Time Reduction:
+98.56%
