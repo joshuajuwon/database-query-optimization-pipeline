@@ -25,3 +25,7 @@ WHERE customer_id = 5000;
 The chart is **not strictly required**, but for a portfolio project it is worth adding because the performance improvement is dramatic and much easier to see visually.
 
 Next, we can create the chart as an **image file inside your `results` folder** so it also appears directly on GitHub.
+
+### Performance Chart
+
+![Query execution time before and after indexing](results/query_optimization_chart.png)
