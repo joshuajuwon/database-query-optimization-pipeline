@@ -1,29 +1,28 @@
-## Query Optimization Results
+# Database Query Optimization Pipeline
 
-The performance of a customer search query was measured before and after creating an index on `customer_id`.
+A practical PostgreSQL database optimization project demonstrating how indexing can significantly improve SQL query performance.
 
-| Metric | Before Index | After Index |
-|---|---:|---:|
-| Execution Time |4,500.323 ms | 64.942 ms |
+## Project Overview
 
-### Performance Improvement
+This project analyzes and improves the performance of customer search queries using PostgreSQL and Python.
 
-- **69.30x faster** query execution.
-- **98.56% reduction** in execution time.
-- Index created: `idx_sales_customer_id`
-- Query tested: `customer_id = 5000`
+A synthetic sales dataset containing **500,000 records** was generated and stored in PostgreSQL. The project establishes a baseline query performance, creates an index on `customer_id`, and measures the resulting performance improvement using `EXPLAIN ANALYZE` and Python-based benchmarking.
 
-### Benchmark Query
+## Objectives
 
-```sql
-EXPLAIN ANALYZE
-SELECT *
-FROM sales
-WHERE customer_id = 5000;
+- Generate a large-scale sales dataset for database performance testing.
+- Store and query the data using PostgreSQL.
+- Measure query performance before optimization.
+- Apply indexing to improve query performance.
+- Measure performance after optimization.
+- Compare the results and document the improvement.
 
+## Technologies
 
-
-
-### Performance Chart
-
-![Query execution time before and after indexing](results/query_optimization_chart.png)
+- **Python**
+- **PostgreSQL**
+- **SQL**
+- **psycopg2**
+- **Pandas**
+- **NumPy**
+- **Git & GitHub**
