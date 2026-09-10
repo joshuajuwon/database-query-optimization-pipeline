@@ -27,7 +27,15 @@ A synthetic sales dataset containing **500,000 records** was generated and store
 - **NumPy**
 - **Git & GitHub**
 
+## Project Workflow
 
+1. Generate a synthetic sales dataset containing 500,000 records.
+2. Store the sales data in PostgreSQL.
+3. Run a customer search query without an index and measure execution time.
+4. Create a B-tree index on `customer_id`.
+5. Run the same query again and measure execution time.
+6. Compare the before-and-after performance.
+7. Document the optimization results and visualize the improvement.
 
 
 ## Query Optimization Results
@@ -56,3 +64,11 @@ EXPLAIN ANALYZE
 SELECT *
 FROM sales
 WHERE customer_id = 5000;
+
+## How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/joshuajuwon/database-query-optimization-pipeline.git
+cd database-query-optimization-pipeline
